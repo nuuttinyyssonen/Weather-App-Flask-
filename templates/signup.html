@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form action="signup", method="post">
+                <h2 class="title">SignUp</h2>
+                {{ form.hidden_tag() }}
+                {{ form.email(size=32, class="input-box", placeholder="email@gmail.com") }}
+                {{ form.password(size=32, class="input-box", placeholder="Password") }}
+                {{ form.password2(size=32, class="input-box", placeholder="Repeat password") }}
+                {{ form.submit(class="button") }}
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: url("https://raw.githubusercontent.com/Hashtechieofficial/Form-/main/background6.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+.title {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.container {
+    margin-top: 70px;
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input-box {
+    background: transparent;
+    border: none;
+    align-items: left;
+    justify-content: left;
+    border-bottom: 2px solid white;
+    height: 40px;
+    color: #fff;
+}
+
+.input-box::placeholder {
+    color: white;
+    position: relative;
+    bottom: 2px;
+}
+
+.button {
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+}
